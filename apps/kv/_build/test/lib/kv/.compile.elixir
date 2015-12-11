@@ -1,0 +1,29 @@
+v1.
+{<<"_build/test/lib/kv/ebin/Elixir.KV.beam">>,'Elixir.KV',<<"lib/kv.ex">>,
+ ['Elixir.Kernel','Elixir.Module','Elixir.Application'],
+ ['Elixir.KV.Supervisor'],
+ [],nil}.
+{<<"_build/test/lib/kv/ebin/Elixir.KV.Bucket.Supervisor.beam">>,
+ 'Elixir.KV.Bucket.Supervisor',<<"lib/kv/bucket/supervisor.ex">>,
+ ['Elixir.Kernel','Elixir.Supervisor','Elixir.Module',
+  'Elixir.Supervisor.Spec'],
+ ['Elixir.KV.Bucket'],
+ [],nil}.
+{<<"_build/test/lib/kv/ebin/Elixir.KV.Bucket.beam">>,'Elixir.KV.Bucket',
+ <<"lib/kv/bucket.ex">>,
+ ['Elixir.Kernel'],
+ ['Elixir.HashDict','Elixir.Agent'],
+ [],nil}.
+{<<"_build/test/lib/kv/ebin/Elixir.KV.Supervisor.beam">>,
+ 'Elixir.KV.Supervisor',<<"lib/kv/supervisor.ex">>,
+ ['Elixir.Kernel','Elixir.Supervisor','Elixir.Module',
+  'Elixir.KV.EventManager','Elixir.KV.Registry','Elixir.Supervisor.Spec',
+  'Elixir.KV.Bucket.Supervisor'],
+ ['Elixir.GenEvent',ets],
+ [],nil}.
+{<<"_build/test/lib/kv/ebin/Elixir.KV.Registry.beam">>,'Elixir.KV.Registry',
+ <<"lib/kv/registry.ex">>,
+ ['Elixir.Kernel','Elixir.Module','Elixir.GenServer'],
+ [erlang,'Elixir.Process','Elixir.GenEvent','Elixir.HashDict',ets,
+  'Elixir.KV.Bucket.Supervisor'],
+ [],nil}.
